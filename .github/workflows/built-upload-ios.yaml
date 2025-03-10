@@ -27,7 +27,7 @@ jobs:
       - name: Install bundler
         run: gem install bundler
       - name: Install fastlane dependencies
-        run: cd ios && bundle install
+        run: bundle install
       - name: clean pod cache
         run: |
           pod cache clean --all
