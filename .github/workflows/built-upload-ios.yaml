@@ -35,7 +35,7 @@ jobs:
 #          arch -x86_64 pod install
       - name: Build & upload iOS binary
         run: |
-          pod install --repo-update 
+#          pod install --repo-update 
           bundle exec fastlane build_upload_testflight
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
